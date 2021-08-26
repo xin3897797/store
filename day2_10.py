@@ -2,11 +2,20 @@
 high = 20
 daytime = 3
 night = 2
-day = 1
+day = 0
+hig = 0
 while True:
-    if 3*day-2*day >= 20:
+    if hig >= high:
         print(day)
         break
     else:
         day += 1
+        hig += 3
+        if hig >= high:
+            print(day)
+            break
+        else:
+            hig -= 2
+
+
 
